@@ -42,7 +42,7 @@ trusted-host=mirrors.aliyun.com
 export TMPDIR=$HOME/tmp
 ```
 
-## DeepLearning
+## Deep Learning
 
 - https://github.com/Cadene/pretrained-models.pytorch
 - https://github.com/lukemelas/EfficientNet-PyTorch
@@ -53,3 +53,7 @@ export TMPDIR=$HOME/tmp
 export TORCH_MODEL_ZOO="/home/liuyuzhong/.torch/"
 export TORCH_HOME="/home/liuyuzhong/.torch/"
 ```
+
+## 数据科学
+
+- ks_2samp: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html
