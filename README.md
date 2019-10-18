@@ -41,3 +41,11 @@ trusted-host=mirrors.aliyun.com
 ```
 export TMPDIR=$HOME/tmp
 ```
+
+## DeepLearning
+
+- https://github.com/Cadene/pretrained-models.pytorch
+- https://github.com/lukemelas/EfficientNet-PyTorch
+
+
+- https://github.com/open-mmlab/mmdetection
