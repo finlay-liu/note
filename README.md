@@ -35,3 +35,9 @@ index-url=http://mirrors.aliyun.com/pypi/simple/
 [install]  
 trusted-host=mirrors.aliyun.com
 ```
+
+## 设置零时tmp文件夹
+
+```
+export TMPDIR=$HOME/tmp
+```
