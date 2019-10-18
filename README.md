@@ -46,6 +46,10 @@ export TMPDIR=$HOME/tmp
 
 - https://github.com/Cadene/pretrained-models.pytorch
 - https://github.com/lukemelas/EfficientNet-PyTorch
-
-
 - https://github.com/open-mmlab/mmdetection
+
+```
+# 设置pytorch本地缓存文件夹
+export TORCH_MODEL_ZOO="/home/liuyuzhong/.torch/"
+export TORCH_HOME="/home/liuyuzhong/.torch/"
+```
