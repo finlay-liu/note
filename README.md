@@ -57,3 +57,24 @@ export TORCH_HOME="/home/liuyuzhong/.torch/"
 ## 数据科学
 
 - ks_2samp: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html
+
+
+## Pytorch
+
+```
+# F2-loss
+def f2_loss(logits, labels):
+    __small_value=1e-6
+    beta = 2
+    batch_size = logits.size()[0]
+    p = F.sigmoid(logits)
+    l = labels
+    num_pos = torch.sum(p, 1) + __small_value
+    num_pos_hat = torch.sum(l, 1) + __small_value
+    tp = torch.sum(l * p, 1)
+    precise = tp / num_pos
+    recall = tp / num_pos_hat
+    fs = (1 + beta * beta) * precise * recall / (beta * beta * precise + recall + __small_value)
+    loss = fs.sum() / batch_size
+    return (1 - loss)
+```
