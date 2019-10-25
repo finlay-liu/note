@@ -27,6 +27,17 @@ http://pypi.mirrors.ustc.edu.cn/simple/ 中国科学技术大学
 https://pypi.tuna.tsinghua.edu.cn/simple 清华
 ```
 
+
+```
+/root/.pip/pip.conf
+
+[global]  
+index-url=http://mirrors.aliyun.com/pypi/simple/  
+[install]  
+trusted-host=mirrors.aliyun.com
+```
+
+
 ## Python
 
 ```
@@ -47,14 +58,6 @@ hex(x )                 将一个整数转换为一个十六进制字符串
 oct(x )                 将一个整数转换为一个八进制字符串  
 ```
 
-```
-/root/.pip/pip.conf
-
-[global]  
-index-url=http://mirrors.aliyun.com/pypi/simple/  
-[install]  
-trusted-host=mirrors.aliyun.com
-```
 
 ## 设置零时tmp文件夹
 
