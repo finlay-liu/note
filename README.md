@@ -100,4 +100,12 @@ def f2_loss(logits, labels):
     fs = (1 + beta * beta) * precise * recall / (beta * beta * precise + recall + __small_value)
     loss = fs.sum() / batch_size
     return (1 - loss)
+    
+def params_count(model):
+    """
+    Compute the number of parameters.
+    Args:
+        model (model): model to count the number of parameters.
+    """
+    return np.sum([p.numel() for p in model.parameters()]).item()
 ```
